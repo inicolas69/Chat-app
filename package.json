@@ -5,6 +5,7 @@
   "dependencies": {
     "firebase": "^5.5.1",
     "prop-types": "^15.6.2",
+    "gh-pages": "^3.0.0",
     "re-base": "^4.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
