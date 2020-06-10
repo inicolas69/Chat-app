@@ -34,7 +34,7 @@ class App extends Component {
     const messages = { ...this.state.messages }
     messages[`message-${Date.now()}`] = message
     Object.keys(messages)
-      .slice(0, -10)
+      .slice(1, -11)
       .forEach(key => {
         messages[key] = null
       })
