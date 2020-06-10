@@ -41,10 +41,11 @@ body {
 .connexion > input {
 	box-sizing: border-box;
 	font-size: 24px;
-	padding: 5px;
+	padding: 15px;
 	border: 5px solid #BB86FC;
 	border-width: 0 0 5px 0;
-	outline: none;
+  outline: none;
+  border-radius: 20px;
 }
 .box {
 	margin: auto;
