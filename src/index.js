@@ -6,16 +6,16 @@ import Connexion from './components/Connexion'
 import NotFound from './components/NotFound'
 import * as serviceWorker from './serviceWorker'
 
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { HashRouter, Route, Switch } from 'react-router-dom'
 
 const Root = () => (
-  <BrowserRouter>
+  <HashRouter>
     <Switch>
       <Route exact path='/' component={Connexion} />
       <Route path='/pseudo/:pseudo' component={App} />
       <Route component={NotFound} />
     </Switch>
-  </BrowserRouter>
+  </HashRouter>
 )
 
 ReactDOM.render(<Root />, document.getElementById('root'))

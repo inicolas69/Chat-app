@@ -6,8 +6,9 @@
 
 body, .box > *, textarea, input {
 	font-family: 'Roboto', sans-serif;
-	color: #1d1d1d;
+	color: #EEEEEE;
 	overflow: hidden;
+  background-color: #292929;
 }
 
 /* ----------------------------
@@ -21,9 +22,10 @@ body {
 	padding: 0;
 	margin: 0;
 	font-size: 20px;
+	background-color: #121212;
 }
 .connexionBox {
-	background-color: #eceff1;
+	background-color: #121212;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -40,7 +42,7 @@ body {
 	box-sizing: border-box;
 	font-size: 24px;
 	padding: 5px;
-	border: 5px solid #2196F3;
+	border: 5px solid #BB86FC;
 	border-width: 0 0 5px 0;
 	outline: none;
 }
@@ -52,13 +54,13 @@ body {
  	align-items: flex-end;
 	width: 100%;
 	max-width: 500px;
-	height: calc(100vh - 100px);
+	height: calc(100vh - 200px);
 	padding: 50px 0;
 	/*border: 5px solid purple;*/
 }
 
 .box > * {
-	width: 100%;
+	width: 95%;
 }
 
 /* ----------------------------
@@ -70,17 +72,18 @@ body {
 	/*border: 5px solid red;*/
 	box-sizing: border-box;
 	align-self: flex-end;
-	max-height: calc(100vh - 310px);
+	max-height: calc(100vh - 360px);
 	overflow-y: scroll;
-	-webkit-overflow-scrolling:touch;
+  -webkit-overflow-scrolling:touch;
+  background-color: #121212;
 }
 
 .messages::-webkit-scrollbar {
-    width: 0.4em;
+    width: 0.2em;
 }
- 
+
 .messages::-webkit-scrollbar-thumb {
-  background-color: #eceff1;
+  background-color: #292929;
 }
 
 /* ----------------------------
@@ -94,16 +97,17 @@ body {
 }
 
 .message > * {
-	padding: 5px 10px;
+	padding: 5px 15px;
 	max-width: 75%;
-	border-radius: 2px;
+	border-radius: 20px;
 	margin: 10px 0;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 }
 
 .not-user-message {
-	background-color: #eceff1;
+  background-color: #eceff1;
+  color: #121212;
 	align-self: flex-start;
 	position: relative;
 }
@@ -112,7 +116,7 @@ body {
 	content: '';
 	position: absolute;
 	top: -7px;
-	left: 10px;
+	left: 20px;
 	width: 0;
 	border-width: 0 10px 7px 0;
 	border-style: solid;
@@ -120,7 +124,7 @@ body {
 }
 
 .user-message {
-	background-color: #2196F3;
+	background-color: #BB86FC;
 	color: #fff;
 	align-self: flex-end;
 	position: relative;
@@ -130,11 +134,11 @@ body {
 	content: '';
 	position: absolute;
 	bottom: -7px;
-	right: 10px;
+	right: 20px;
 	width: 0;
 	border-width: 7px 0 0 10px;
 	border-style: solid;
-	border-color: #2196F3 transparent;
+	border-color: #BB86FC transparent;
 }
 
 /* ----------------------------
@@ -143,6 +147,7 @@ body {
 
 .form {
 	align-self: flex-end;
+	background-color: #121212;
 }
 
 .form > * {
@@ -152,28 +157,30 @@ body {
 textarea {
 	box-sizing: border-box;
 	height: 120px;
-	border: 5px solid #2196F3;
+	border: 5px solid #BB86FC;
 	border-width: 0 0 5px 0;
-	background-color: #ECEFF1;
+	background-color: #292929;
 	outline: none;
 	font-size: 20px;
-	padding: 5px 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
 }
 
 .info {
 	text-align: right;
 	padding-right: 5px;
+	background-color: #121212;
 }
 
 button {
 	font-size: 20px;
 	border: none;
 	color: white;
-	background-color: #2196F3;
+	background-color: #BB86FC;
 	margin-top: 10px;
 	padding: 10px;
 	cursor: pointer;
-	border-radius: 2px;
+	border-radius: 20px;
 }
 
 button:disabled {
