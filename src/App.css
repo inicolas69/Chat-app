@@ -11,6 +11,12 @@ body, .box > *, textarea, input {
   background-color: #292929;
 }
 
+/* @media (min-width: 600px) {
+  .box {
+    border: 5px solid purple;
+  }
+} */
+
 /* ----------------------------
 	STRUCTURE
 ---------------------------- */
@@ -32,7 +38,7 @@ body {
 	min-height: 100vh;
 }
 .connexion {
-	max-width: 500px;
+	max-width: 700px;
 	font-size: 24px;
 }
 .connexion > * {
@@ -54,7 +60,7 @@ body {
  	flex-wrap: wrap;
  	align-items: flex-end;
 	width: 100%;
-	max-width: 500px;
+	max-width: 700px;
 	height: calc(100vh - 200px);
 	padding: 50px 0;
 	/*border: 5px solid purple;*/
